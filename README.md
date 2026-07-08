@@ -1,7 +1,6 @@
 # Gavin Hermes Workflow Skills
 
-> **Open the rendered showcase:** https://ritengzhang77-max.github.io/gavin_skill/  
-> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for interactive demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html). For slides, use the direct [pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx).
+> Public-safe, separate artifact examples from Gavin's Hermes workflow. Use the `github.io` links below for rendered HTML/PDF artifacts; GitHub `blob/main/*.html` shows source code instead of rendering.
 
 
 <p align="center">
@@ -10,8 +9,6 @@
 </p>
 
 <p align="center">
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/"><strong>Open the visual landing page</strong></a>
-  ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">Thread Canvas sample</a>
   ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">Paper-plan browser</a>
@@ -39,26 +36,12 @@ Discord thread → project context → loaded skill → local artifacts → QA �
 
 The central idea is that a strong agent workflow should be inspectable. Skills encode the things that otherwise live only in repeated chat corrections: deck taste, evidence hygiene, stop rules, artifact routing, readable layout standards, and what counts as “done.”
 
-## Visual entrypoint
-
-The designed landing page lives in `docs/index.html` and is suitable for GitHub Pages:
-
-```text
-docs/index.html
-```
-
-If Pages is enabled for this repo from the `docs/` folder, it should appear at:
-
-```text
-https://ritengzhang77-max.github.io/gavin_skill/
-```
-
 ## Demo artifacts
 
-Public-safe, near-real demos are included so viewers can see the actual artifact shapes these skills produce. Interactive demos are reserved for browser-style artifacts; the slide artifact is linked directly as a PDF/PPTX package rather than wrapped in an unnecessary extra slide viewer.
+The examples are intentionally separate. They do not pretend to be one connected landing-page workflow; each one shows a different artifact type we actually use.
 
 - [Open the Thread Canvas sample](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — real Thread Canvas-style clean-chat + promoted-file preview surface.
-- [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — clickable manuscript hierarchy mapping claims to figures, controls, and next gates.
+- [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — manuscript-style paper browser with Abstract, Introduction, Related Work, Methods, Results, Discussion, and Appendices.
 - [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — searchable public-safe feature/value/evidence browser.
 - [Open the pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx) — native deck package with contact-sheet QA.
 
@@ -67,25 +50,25 @@ Preview screenshots are shown one per row so the labels and UI details are reada
 ### 1. Thread Canvas sample
 
 <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">
-  <img width="1000" alt="Thread Canvas sample" src="docs/demos/screenshots/thread-canvas-sample.png">
+  <img width="1000" alt="Thread Canvas sample" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/thread-canvas-sample.png">
 </a>
 
 ### 2. Paper-plan browser
 
 <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">
-  <img width="1000" alt="Paper-plan browser" src="docs/demos/screenshots/paper-plan-browser.png">
+  <img width="1000" alt="Paper-plan browser" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/paper-plan-browser.png">
 </a>
 
 ### 3. Value Action feature atlas
 
 <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html">
-  <img width="1000" alt="Value Action feature atlas" src="docs/demos/screenshots/value-action-feature-atlas.png">
+  <img width="1000" alt="Value Action feature atlas" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/value-action-feature-atlas.png">
 </a>
 
 ### 4. Pure Hermes-built PPTX/PDF package
 
 <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf">
-  <img width="1000" alt="Pure Hermes-built PPTX/PDF package" src="docs/demos/screenshots/pptx-pdf-package.png">
+  <img width="1000" alt="Pure Hermes-built PPTX/PDF package" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/pptx-pdf-package.png">
 </a>
 
 These are examples of the artifact style, not private project dumps.
@@ -122,7 +105,7 @@ Removed from the public showcase: friend-specific workflows and generic upstream
 ```text
 .
 ├── docs/
-│   ├── index.html                         # visual landing page
+│   ├── index.html                         # simple GitHub Pages index for separate examples
 │   ├── demos/                             # near-real public-safe artifact examples
 │   ├── workflow-architecture.md
 │   ├── thread-canvas-discord-workflow.md

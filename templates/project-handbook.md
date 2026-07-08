@@ -14,8 +14,8 @@ Brief stable description.
 
 ## Current research questions
 
-- RQ1:
-- RQ2:
+- Main question 1:
+- Main question 2:
 
 ## Important local files
 
