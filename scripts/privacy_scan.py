@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {'.git', '__pycache__'}
-TEXT_EXTS = {'.md', '.txt', '.json', '.yaml', '.yml', '.py', '.sh', '.toml'}
+TEXT_EXTS = {'.md', '.txt', '.json', '.yaml', '.yml', '.py', '.sh', '.toml', '.html', '.css', '.svg'}
 PATTERNS = {
     'possible_api_key': re.compile(r'(?i)(api[_-]?key|secret|token|password)\s*[:=]\s*["\']?[^\s"\']{12,}'),
     'private_key': re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----'),

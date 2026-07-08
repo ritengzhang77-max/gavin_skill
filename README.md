@@ -1,63 +1,119 @@
 # Gavin Hermes Workflow Skills
 
-A public-facing package of Gavin's Hermes Agent workflows: research presentation generation, paper planning, autonomous research handoffs, Thread Canvas / Discord artifact practice, and project-oriented agent operating patterns.
+<p align="center">
+  <strong>A public, skill-shaped view of a Discord-first AI research workflow.</strong><br/>
+  Hermes skills for research decks, paper planning, autonomous handoffs, Thread Canvas artifacts, and agent operating taste.
+</p>
 
-This repository is staged locally first. It is intended to be pushed to a GitHub repository later after a final privacy review. Supporting per-project reference files from the live skills have been omitted from the public tree and archived separately for private review.
+<p align="center">
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/"><strong>Open the visual landing page</strong></a>
+  ·
+  <a href="docs/demos/research-deck-demo.html">Slide demo</a>
+  ·
+  <a href="docs/demos/thread-canvas-demo.html">Thread Canvas demo</a>
+  ·
+  <a href="docs/demos/paper-plan-demo.html">Paper-plan demo</a>
+</p>
 
-## What this is
+<p align="center">
+  <img alt="Hermes skills" src="https://img.shields.io/badge/Hermes-Agent-7170ff?style=for-the-badge">
+  <img alt="Workflow" src="https://img.shields.io/badge/workflow-Discord%20%E2%86%92%20Files%20%E2%86%92%20Artifacts-23252a?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-f7f8f8?style=for-the-badge">
+</p>
 
-This is not a full dump of `~/.hermes` and not a backup of private projects. It is a curated workflow showcase:
+---
 
-- **Skills**: reusable Hermes `SKILL.md` workflows that encode how Gavin runs research, creates decks, plans papers, translates documents, troubleshoots Hermes/Discord, and manages long-running jobs.
-- **Examples/templates**: public-safe placeholders for showing how a workflow is invoked and what artifacts it produces.
-- **Code-comparison notes**: space for comparing naive scripts/prompts vs the workflow-enhanced version.
-- **Privacy review docs**: explicit checklist before pushing public.
+## What this repo is
 
-## Core skill groups
+This repository is a public-safe package of Gavin's Hermes Agent workflows. It is meant to show the **operating system around the research**, not just individual prompts:
+
+```text
+Discord thread → project context → loaded skill → local artifacts → QA → handoff / Thread Canvas
+```
+
+The central idea is that a strong agent workflow should be inspectable. Skills encode the things that otherwise live only in repeated chat corrections: deck taste, evidence hygiene, stop rules, artifact routing, readable layout standards, and what counts as “done.”
+
+## Visual entrypoint
+
+The designed landing page lives in `docs/index.html` and is suitable for GitHub Pages:
+
+```text
+docs/index.html
+```
+
+If Pages is enabled for this repo from the `docs/` folder, it should appear at:
+
+```text
+https://ritengzhang77-max.github.io/gavin_skill/
+```
+
+## Demo artifacts
+
+Synthetic demos are included so viewers can see the kinds of artifacts these skills are designed to produce:
+
+- [`docs/demos/research-deck-demo.html`](docs/demos/research-deck-demo.html) — slide-style research checkpoint deck.
+- [`docs/demos/thread-canvas-demo.html`](docs/demos/thread-canvas-demo.html) — Thread Canvas / clean-chat artifact surface.
+- [`docs/demos/paper-plan-demo.html`](docs/demos/paper-plan-demo.html) — paper-planning board mapping claims to figures, controls, and next actions.
+
+These are examples of the artifact style, not private project dumps.
+
+## Skill groups
 
 ### Research and writing
 
-- `skills/research/gavin-research-presentations/` — Gavin-style research deck generation and rendered QA.
-- `skills/research/paper-drafting-plan/` — paper-planning and result-to-section mapping.
-- `skills/research/gavin-autonomous-research/` — autonomous local research phases, handoffs, TODO updates.
-- `skills/research/research-results-synthesis/` — explain and validate computational research artifacts.
-- `skills/research/paper-translation-web-reader/` — side-by-side paper/PDF reading and memorable translation workflow.
+- `skills/research/gavin-research-presentations/` — research decks, rendered QA, PPTX/PDF packaging.
+- `skills/research/paper-drafting-plan/` — where each result belongs in a paper and what controls/figures it needs.
+- `skills/research/gavin-autonomous-research/` — bounded autonomous work until the next decision point.
+- `skills/research/research-results-synthesis/` — grounded interpretation of local computational artifacts.
+- `skills/research/paper-translation-web-reader/` — side-by-side reading and memorable translation workflow.
 
-### Productivity / artifacts
+### Productivity and deliverables
 
-- `skills/productivity/powerpoint/` — PPTX creation/editing workflow.
-- `skills/productivity/felix-translation/` — bilingual historical-document translation deliverable workflow.
-- `skills/productivity/teams-meeting-pipeline/` — Teams meeting summary pipeline operations.
+- `skills/productivity/powerpoint/` — native PPTX authoring/editing.
+- `skills/productivity/felix-translation/` — bilingual historical-document translation package workflow.
+- `skills/productivity/teams-meeting-pipeline/` — Teams meeting summary operations.
 
 ### Hermes / Discord / infrastructure
 
-- `skills/software-development/hermes-gateway-troubleshooting/` — stuck/silent Discord gateway debugging.
+- `skills/software-development/hermes-gateway-troubleshooting/` — debugging stuck/silent gateway turns.
 - `skills/software-development/debugging-hermes-tui-commands/` — TUI/slash command debugging.
-- `skills/software-development/hermes-s6-container-supervision/` — container service supervision.
-- `skills/devops/remote-hpc-slurm/` — remote Slurm/HPC cluster control from Hermes.
-- `skills/devops/webhook-subscriptions/` — event-driven Hermes runs.
+- `skills/software-development/hermes-s6-container-supervision/` — container supervision internals.
+- `skills/devops/remote-hpc-slurm/` — remote Slurm/HPC control from Hermes.
+- `skills/devops/webhook-subscriptions/` — event-driven agent runs.
 
-## Intended public story
+## What makes the workflow different
 
-The repo should show three layers of Gavin's workflow:
+- **Skill-encoded taste**: layout rules, claim boundaries, QA expectations, and stop points are stored as reusable procedures.
+- **Durable local state**: project handbooks, TODOs, handoffs, manifests, and artifacts keep long-running work coherent across threads.
+- **Artifact-first delivery**: decks, HTML dashboards, PDFs, and Thread Canvas pages are treated as first-class deliverables.
+- **Bounded autonomy**: the agent can continue work, but stops at decision-changing results, failed prerequisites, or resource conflicts.
+- **Public-safe examples**: demos here are synthetic and manually staged; private logs and runtime state are excluded.
 
-1. **Operating system for research** — Discord/Hermes as a project control plane, local project roots, durable TODOs/handoffs, and Thread Canvas artifacts.
-2. **Skill-encoded taste** — specific preferences for deck readability, evidence hygiene, formulas, artifact QA, and when to stop vs continue autonomously.
-3. **Reproducible examples** — sanitized examples showing prompts, expected files, checks, and before/after comparisons.
+## Repository layout
 
-## Important privacy note
-
-This staging repo may still contain local paths, project names, or workflow-specific context. It should not be pushed publicly until `docs/PRIVACY_REVIEW.md` is complete.
-
-## Later GitHub push
-
-When Gavin gives the target repository URL:
-
-```bash
-cd /home/<user>/work/gavin-hermes-workflow-skills
-git remote add origin <GITHUB_REPO_URL>
-git branch -M main
-git push -u origin main
+```text
+.
+├── docs/
+│   ├── index.html                         # visual landing page
+│   ├── demos/                             # synthetic artifact examples
+│   ├── workflow-architecture.md
+│   ├── thread-canvas-discord-workflow.md
+│   └── PRIVACY_REVIEW.md
+├── examples/                              # prompt/output-shape examples
+├── templates/                             # project handbook + handoff templates
+├── code-comparisons/                      # before/after workflow comparison scaffold
+├── skills/                                # curated Hermes SKILL.md workflows
+└── scripts/privacy_scan.py                # lightweight pre-public scan
 ```
 
-If the repo already has history, clone it separately and copy this staged content in, or add the remote and pull/rebase first.
+## Privacy stance
+
+This is not a dump of `~/.hermes`. It deliberately excludes credentials, logs, raw sessions, memories, and private project artifacts. Supporting per-project reference files from live skills were omitted from the public tree and archived separately for private review.
+
+Before public release or major updates, run:
+
+```bash
+python scripts/privacy_scan.py
+```
+
+Then complete `docs/PRIVACY_REVIEW.md` manually.
