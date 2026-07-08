@@ -62,17 +62,32 @@ Public-safe, near-real demos are included so viewers can see the actual artifact
 - [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — searchable public-safe feature/value/evidence browser.
 - [Open the pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx) — native deck package with contact-sheet QA.
 
-Preview screenshots:
+Preview screenshots are shown one per row so the labels and UI details are readable.
 
+### 1. Thread Canvas sample
 
-<p align="center">
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html"><img width="420" alt="Thread Canvas sample" src="docs/demos/screenshots/thread-canvas-sample.png"></a>
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html"><img width="420" alt="Paper plan browser" src="docs/demos/screenshots/paper-plan-browser.png"></a>
-</p>
-<p align="center">
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html"><img width="420" alt="Value Action feature atlas" src="docs/demos/screenshots/value-action-feature-atlas.png"></a>
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf"><img width="420" alt="Pure Hermes-built PPTX/PDF package" src="docs/demos/screenshots/pptx-pdf-package.png"></a>
-</p>
+<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">
+  <img width="1000" alt="Thread Canvas sample" src="docs/demos/screenshots/thread-canvas-sample.png">
+</a>
+
+### 2. Paper-plan browser
+
+<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">
+  <img width="1000" alt="Paper-plan browser" src="docs/demos/screenshots/paper-plan-browser.png">
+</a>
+
+### 3. Value Action feature atlas
+
+<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html">
+  <img width="1000" alt="Value Action feature atlas" src="docs/demos/screenshots/value-action-feature-atlas.png">
+</a>
+
+### 4. Pure Hermes-built PPTX/PDF package
+
+<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf">
+  <img width="1000" alt="Pure Hermes-built PPTX/PDF package" src="docs/demos/screenshots/pptx-pdf-package.png">
+</a>
+
 These are examples of the artifact style, not private project dumps.
 
 ## Skill groups
