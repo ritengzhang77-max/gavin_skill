@@ -1,0 +1,34 @@
+# Never commit private Hermes runtime state
+.env
+*.env
+config.yaml
+auth.json
+google_token.json
+google_client_secret.json
+sessions/
+logs/
+memories/
+*.sqlite
+*.db
+
+# Generated/large artifacts
+outputs/
+exports/
+*.pptx
+*.pdf
+*.zip
+*.tar.gz
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Python/cache
+__pycache__/
+*.pyc
+.DS_Store
+
+# Local-only private review material
+private-review/
+*_private_skill_snapshot.tar.gz

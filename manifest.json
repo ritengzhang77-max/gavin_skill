@@ -1,0 +1,27 @@
+{
+  "source_skills_root": "/home/<user>/.hermes/skills",
+  "staging_root": "/home/<user>/work/gavin-hermes-workflow-skills",
+  "copied_skill_dirs": [
+    "research/gavin-research-presentations",
+    "research/paper-drafting-plan",
+    "research/gavin-autonomous-research",
+    "research/research-results-synthesis",
+    "research/paper-translation-web-reader",
+    "productivity/powerpoint",
+    "productivity/felix-translation",
+    "software-development/hermes-gateway-troubleshooting",
+    "software-development/debugging-hermes-tui-commands",
+    "software-development/hermes-s6-container-supervision",
+    "devops/remote-hpc-slurm",
+    "devops/webhook-subscriptions",
+    "productivity/teams-meeting-pipeline"
+  ],
+  "omitted_by_design": [
+    "~/.hermes/.env",
+    "~/.hermes/config.yaml",
+    "~/.hermes/sessions",
+    "~/.hermes/logs",
+    "~/.hermes/memories",
+    "project data/artifacts"
+  ]
+}
