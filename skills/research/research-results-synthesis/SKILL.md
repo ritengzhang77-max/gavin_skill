@@ -3,7 +3,7 @@ name: research-results-synthesis
 title: Research Results Synthesis and Explanation
 description: "Explain computational research results and operate benchmark/evaluation pipelines from local artifacts, summaries, plots, CSVs, manifests, and experiment notes. For ConsVal/Value Action screen interpretation, see references/consval-screen-interpretation.md; for Gavin Value Action RQ/paper-framing corrections, see references/value-action-rq-synthesis.md; for Value Action RQ6 feature-similarity/gap-vs-no-gap synthesis, see references/value-action-rq6-feature-similarity-synthesis.md."
 version: 1.0.0
-author: Hermes Agent
+author: Gavin / Hermes Agent
 license: MIT
 metadata:
   hermes:
@@ -14,6 +14,11 @@ metadata:
 ---
 
 # Research Results Synthesis and Explanation
+
+## Public showcase attribution
+
+This is a Gavin/Hermes local workflow skill, substantially shaped by Gavin-specific research projects, artifact conventions, and repeated claim-hygiene corrections. It is not presented here as a stock upstream Hermes package skill.
+
 
 Use this skill when the user asks to explain, interpret, summarize, or review results from a research project, especially when the results are stored across local notes, CSVs, markdown reports, plots, generated decks, or run directories.
 

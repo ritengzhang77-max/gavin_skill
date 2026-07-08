@@ -310,7 +310,7 @@ still evolving. For Value Action ConsVal magnitude-aware decks, order-robust add
 
 For Gavin's nonlinear SAE Linear-vs-ResNet ranking decks, include these by default unless he explicitly asks for a smaller checkpoint.
 
-**Pure nonlinear SAFE-format pitfall:** if Gavin asks for pure nonlinear/no-skip comparisons “in the format/style of `gpt2_corrected_final_linear_resnet_ranking_SAFE`” or says “4 slides” while referencing that SAFE deck, do **not** make four single-page slides. Interpret this as four full SAFE-format decks/slidesets unless he explicitly says single-page summaries. Inspect the referenced SAFE deck spine first, then build separate full decks for OPT/GPT pure-vs-Linear and OPT/GPT pure-vs-ResNet as applicable; see `references/nonlinear-sae-pure-nonlinear-full-safe-ranking-decks.md`.
+**Pure nonlinear SAFE-format pitfall:** if Gavin asks for pure nonlinear/no-skip comparisons “in the format/style of a corrected final SAFE ranking deck” or says “4 slides” while referencing that SAFE deck, do **not** make four single-page slides. Interpret this as four full SAFE-format decks/slidesets unless he explicitly says single-page summaries. Inspect the referenced SAFE deck spine first, then build separate full decks for OPT/GPT pure-vs-Linear and OPT/GPT pure-vs-ResNet as applicable; see `references/nonlinear-sae-pure-nonlinear-full-safe-ranking-decks.md`.
 
 For Gavin's nonlinear SAE Linear-vs-ResNet ranking decks, include these by default unless he explicitly asks for a smaller checkpoint:
 

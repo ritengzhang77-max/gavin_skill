@@ -6,15 +6,14 @@
     "research/paper-drafting-plan",
     "research/gavin-autonomous-research",
     "research/research-results-synthesis",
-    "research/paper-translation-web-reader",
-    "productivity/powerpoint",
-    "productivity/felix-translation",
     "software-development/hermes-gateway-troubleshooting",
     "software-development/debugging-hermes-tui-commands",
-    "software-development/hermes-s6-container-supervision",
-    "devops/remote-hpc-slurm",
-    "devops/webhook-subscriptions",
-    "productivity/teams-meeting-pipeline"
+    "devops/remote-hpc-slurm"
+  ],
+  "not_showcased_or_removed": [
+    "generic helper docs not showcased as Gavin-built",
+    "generic operations workflows not part of this showcase",
+    "generic Hermes internals not part of this showcase"
   ],
   "omitted_by_design": [
     "~/.hermes/.env",

@@ -1,7 +1,7 @@
 # Gavin Hermes Workflow Skills
 
 > **Open the rendered showcase:** https://ritengzhang77-max.github.io/gavin_skill/  
-> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for rendered demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [Real deck browser](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html), [Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html), [real GPT-2 SAFE PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pdf), [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pptx).
+> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for interactive demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html). For slides, use the direct [pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx).
 
 
 <p align="center">
@@ -12,13 +12,13 @@
 <p align="center">
   <a href="https://ritengzhang77-max.github.io/gavin_skill/"><strong>Open the visual landing page</strong></a>
   ·
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html">Real deck browser</a>
-  ·
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">Thread Canvas demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">Thread Canvas sample</a>
   ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">Paper-plan browser</a>
   ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html">Feature atlas</a>
+  ·
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf">PPTX/PDF package</a>
 </p>
 
 <p align="center">
@@ -55,39 +55,37 @@ https://ritengzhang77-max.github.io/gavin_skill/
 
 ## Demo artifacts
 
-Public-safe, near-real demos are included so viewers can see the actual artifact shapes these skills produce: artifact-rich Thread Canvas pages, manuscript-browser paper dashboards with near-real research questions, and rendered HTML/PDF/PPTX deck/contact-sheet QA packages:
+Public-safe, near-real demos are included so viewers can see the actual artifact shapes these skills produce. Interactive demos are reserved for browser-style artifacts; the slide artifact is linked directly as a PDF/PPTX package rather than wrapped in an unnecessary extra slide viewer.
 
-- [Open the real deck browser](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html) — actual GPT-2 nonlinear-SAE SAFE ranking deck with slide images, PDF, PPTX, and contact-sheet QA.
-- [Open the rendered Thread Canvas demo](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — clean-chat artifact surface with clickable promoted files and right-side previews.
+- [Open the Thread Canvas sample](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — real Thread Canvas-style clean-chat + promoted-file preview surface.
 - [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — clickable manuscript hierarchy mapping claims to figures, controls, and next gates.
 - [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — searchable public-safe feature/value/evidence browser.
-- [Open the real GPT-2 SAFE PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pptx) — actual nonlinear-SAE artifact package.
+- [Open the pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx) — native deck package with contact-sheet QA.
+
+Preview screenshots are under [`docs/demos/screenshots/`](docs/demos/screenshots/).
 
 These are examples of the artifact style, not private project dumps.
 
 ## Skill groups
 
-### Research and writing
+This showcase is intentionally narrow: it includes Gavin/Hermes workflow skills we built or substantially customized together. Generic Hermes package skills and friend-specific workflows are not showcased here.
 
-- `skills/research/gavin-research-presentations/` — research decks, rendered QA, PPTX/PDF packaging.
-- `skills/research/paper-drafting-plan/` — where each result belongs in a paper and what controls/figures it needs.
-- `skills/research/gavin-autonomous-research/` — bounded autonomous work until the next decision point.
-- `skills/research/research-results-synthesis/` — grounded interpretation of local computational artifacts.
-- `skills/research/paper-translation-web-reader/` — side-by-side reading and memorable translation workflow.
+### Research workflow skills
 
-### Productivity and deliverables
+- `skills/research/gavin-research-presentations/` — Gavin-style research decks, rendered QA, PPTX/PDF packaging, and slide evidence hygiene.
+- `skills/research/paper-drafting-plan/` — paper-section/appendix planning dashboards and manuscript preview browsers.
+- `skills/research/gavin-autonomous-research/` — bounded autonomous research work until the next decision-changing point.
+- `skills/research/research-results-synthesis/` — Gavin/Hermes local research interpretation workflow for reading result artifacts, claim boundaries, and project status. This is not presented as a stock Hermes package skill.
 
-- `skills/productivity/powerpoint/` — native PPTX authoring/editing.
-- `skills/productivity/felix-translation/` — bilingual historical-document translation package workflow.
-- `skills/productivity/teams-meeting-pipeline/` — Teams meeting summary operations.
+### Hermes / project operations skills
 
-### Hermes / Discord / infrastructure
+- `skills/software-development/hermes-gateway-troubleshooting/` — debugging Gavin's Discord/Hermes gateway workflow.
+- `skills/software-development/debugging-hermes-tui-commands/` — debugging Hermes TUI/slash-command behavior in this environment.
+- `skills/devops/remote-hpc-slurm/` — Gavin's remote HPC/Slurm workflow conventions.
 
-- `skills/software-development/hermes-gateway-troubleshooting/` — debugging stuck/silent gateway turns.
-- `skills/software-development/debugging-hermes-tui-commands/` — TUI/slash command debugging.
-- `skills/software-development/hermes-s6-container-supervision/` — container supervision internals.
-- `skills/devops/remote-hpc-slurm/` — remote Slurm/HPC control from Hermes.
-- `skills/devops/webhook-subscriptions/` — event-driven agent runs.
+### Attribution note
+
+Removed from the public showcase: friend-specific workflows and generic upstream/helper skills that should not be implied as Gavin-built. If a future page needs a stock Hermes package skill, it should be marked as upstream/stock.
 
 ## What makes the workflow different
 
