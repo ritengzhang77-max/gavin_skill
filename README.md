@@ -1,7 +1,7 @@
 # Gavin Hermes Workflow Skills
 
 > **Open the rendered showcase:** https://ritengzhang77-max.github.io/gavin_skill/  
-> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for rendered demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [HTML deck](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html), [PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gavin-workflow-research-checkpoint.pdf), [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gavin-workflow-research-checkpoint.pptx).
+> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for rendered demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [Real deck browser](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html), [Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html), [real GPT-2 SAFE PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pdf), [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pptx).
 
 
 <p align="center">
@@ -12,11 +12,13 @@
 <p align="center">
   <a href="https://ritengzhang77-max.github.io/gavin_skill/"><strong>Open the visual landing page</strong></a>
   ·
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html">Slide demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html">Real deck browser</a>
   ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">Thread Canvas demo</a>
   ·
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">Paper-plan demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">Paper-plan browser</a>
+  ·
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html">Feature atlas</a>
 </p>
 
 <p align="center">
@@ -53,11 +55,13 @@ https://ritengzhang77-max.github.io/gavin_skill/
 
 ## Demo artifacts
 
-Synthetic but layout-faithful demos are included so viewers can see the actual artifact shapes these skills produce: artifact-rich Thread Canvas pages, manuscript-browser paper dashboards with near-real research questions, and rendered HTML/PDF/PPTX deck/contact-sheet QA packages:
+Public-safe, near-real demos are included so viewers can see the actual artifact shapes these skills produce: artifact-rich Thread Canvas pages, manuscript-browser paper dashboards with near-real research questions, and rendered HTML/PDF/PPTX deck/contact-sheet QA packages:
 
-- [Open the rendered HTML deck](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html) — slide-style research checkpoint deck.
-- [Open the rendered Thread Canvas demo](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — Thread Canvas / clean-chat artifact surface.
-- [Open the rendered paper-plan demo](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — paper-planning board mapping claims to figures, controls, and next actions.
+- [Open the real deck browser](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html) — actual GPT-2 nonlinear-SAE SAFE ranking deck with slide images, PDF, PPTX, and contact-sheet QA.
+- [Open the rendered Thread Canvas demo](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — clean-chat artifact surface with clickable promoted files and right-side previews.
+- [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — clickable manuscript hierarchy mapping claims to figures, controls, and next gates.
+- [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — searchable public-safe feature/value/evidence browser.
+- [Open the real GPT-2 SAFE PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gpt2_corrected_final_linear_resnet_ranking_SAFE.pptx) — actual nonlinear-SAE artifact package.
 
 These are examples of the artifact style, not private project dumps.
 
@@ -91,7 +95,7 @@ These are examples of the artifact style, not private project dumps.
 - **Durable local state**: project handbooks, TODOs, handoffs, manifests, and artifacts keep long-running work coherent across threads.
 - **Artifact-first delivery**: decks, HTML dashboards, PDFs, and Thread Canvas pages are treated as first-class deliverables.
 - **Bounded autonomy**: the agent can continue work, but stops at decision-changing results, failed prerequisites, or resource conflicts.
-- **Public-safe examples**: demos here are synthetic and manually staged; private logs and runtime state are excluded.
+- **Public-safe demos**: demos here are near-real, artifact-backed, and manually staged; private logs and runtime state are excluded.
 
 ## Repository layout
 
@@ -99,7 +103,7 @@ These are examples of the artifact style, not private project dumps.
 .
 ├── docs/
 │   ├── index.html                         # visual landing page
-│   ├── demos/                             # synthetic artifact examples
+│   ├── demos/                             # near-real public-safe artifact examples
 │   ├── workflow-architecture.md
 │   ├── thread-canvas-discord-workflow.md
 │   └── PRIVACY_REVIEW.md
