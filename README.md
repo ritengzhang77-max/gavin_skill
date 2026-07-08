@@ -49,7 +49,7 @@ https://ritengzhang77-max.github.io/gavin_skill/
 
 ## Demo artifacts
 
-Synthetic demos are included so viewers can see the kinds of artifacts these skills are designed to produce:
+Synthetic but layout-faithful demos are included so viewers can see the actual artifact shapes these skills produce: split Thread Canvas pages, manuscript-browser paper dashboards, and rendered deck/contact-sheet QA packages:
 
 - [`docs/demos/research-deck-demo.html`](docs/demos/research-deck-demo.html) — slide-style research checkpoint deck.
 - [`docs/demos/thread-canvas-demo.html`](docs/demos/thread-canvas-demo.html) — Thread Canvas / clean-chat artifact surface.
