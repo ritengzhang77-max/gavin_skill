@@ -12,11 +12,11 @@
 <p align="center">
   <a href="https://ritengzhang77-max.github.io/gavin_skill/"><strong>Open the visual landing page</strong></a>
   ·
-  <a href="docs/demos/research-deck-demo.html">Slide demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html">Slide demo</a>
   ·
-  <a href="docs/demos/thread-canvas-demo.html">Thread Canvas demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html">Thread Canvas demo</a>
   ·
-  <a href="docs/demos/paper-plan-demo.html">Paper-plan demo</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html">Paper-plan demo</a>
 </p>
 
 <p align="center">
@@ -55,9 +55,9 @@ https://ritengzhang77-max.github.io/gavin_skill/
 
 Synthetic but layout-faithful demos are included so viewers can see the actual artifact shapes these skills produce: artifact-rich Thread Canvas pages, manuscript-browser paper dashboards with near-real research questions, and rendered HTML/PDF/PPTX deck/contact-sheet QA packages:
 
-- [`docs/demos/research-deck-demo.html`](docs/demos/research-deck-demo.html) — slide-style research checkpoint deck.
-- [`docs/demos/thread-canvas-demo.html`](docs/demos/thread-canvas-demo.html) — Thread Canvas / clean-chat artifact surface.
-- [`docs/demos/paper-plan-demo.html`](docs/demos/paper-plan-demo.html) — paper-planning board mapping claims to figures, controls, and next actions.
+- [Open the rendered HTML deck](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html) — slide-style research checkpoint deck.
+- [Open the rendered Thread Canvas demo](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — Thread Canvas / clean-chat artifact surface.
+- [Open the rendered paper-plan demo](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — paper-planning board mapping claims to figures, controls, and next actions.
 
 These are examples of the artifact style, not private project dumps.
 
