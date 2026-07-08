@@ -1,5 +1,9 @@
 # Gavin Hermes Workflow Skills
 
+> **Open the rendered showcase:** https://ritengzhang77-max.github.io/gavin_skill/  
+> GitHub `blob/main/*.html` pages show source code. Use the `github.io` links for rendered demos: [Thread Canvas](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html), [Paper plan](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html), [HTML deck](https://ritengzhang77-max.github.io/gavin_skill/demos/research-deck-demo.html), [PDF deck](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gavin-workflow-research-checkpoint.pdf), [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/gavin-workflow-research-checkpoint.pptx).
+
+
 <p align="center">
   <strong>A public, skill-shaped view of a Discord-first AI research workflow.</strong><br/>
   Hermes skills for research decks, paper planning, autonomous handoffs, Thread Canvas artifacts, and agent operating taste.
