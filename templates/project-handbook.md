@@ -20,7 +20,7 @@ Brief stable description.
 ## Important local files
 
 - `todo.md` — active tasks.
-- `HANDOFF.md` — latest autonomous handoff.
+- `HANDOFF.md` — latest project handoff.
 - `docs/` — durable explanations and design notes.
 
 ## Operating rules

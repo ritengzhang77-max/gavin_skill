@@ -112,7 +112,7 @@ native PPTX decks that consolidate branch-specialization structural-affinity
 results across Phase 4C/Phase 6/Phase 8G after a long-thread/context reset, and
 `references/value-action-heavy-substep-pptx-checkpoints.md` for Value Action
 phase work where each heavy substep needs its own PPTX/PDF/contact-sheet
-checkpoint while the autonomous research phase continues, and
+checkpoint while the broader research phase continues, and
 `references/value-action-top15-steering-pptx.md` for native PPTX decks that must
 cover every feature in a top-k feature-steering audit with value/option Q-ranks,
 dose-response plots, free-generation examples, option-position audit verdicts,
@@ -258,7 +258,7 @@ quarantine v1 outputs. For EV+DAME quality-filter decks with detailed per-archit
    `references/native-powerpoint-checkpoint-qa.md`,
    `references/sectioned-native-pptx-workflow.md`, and
    `references/branch-specialization-second-role-expansion-powerpoint.md`.
-   If Gavin asks for PPTX reporting for each heavy substep of an autonomous
+   If Gavin asks for PPTX reporting for each heavy substep of a research
    phase, create one compact native-PPTX checkpoint package per heavy result
    substep, each generated from local analysis artifacts and exported as PPTX,
    PDF, and contact sheet; see

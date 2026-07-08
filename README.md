@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>A public, skill-shaped view of a Discord-first AI research workflow.</strong><br/>
-  Hermes skills for research decks, paper planning, autonomous handoffs, Thread Canvas artifacts, and agent operating taste.
+  Hermes skills for research decks, paper planning, Thread Canvas artifacts, and agent operating taste.
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
 This repository is a public-safe package of Gavin's Hermes Agent workflows. It is meant to show the **operating system around the research**, not just individual prompts:
 
 ```text
-Discord thread → project context → loaded skill → local artifacts → QA → handoff / Thread Canvas
+Discord thread → project context → loaded skill → local artifacts → QA → Thread Canvas
 ```
 
 The central idea is that a strong agent workflow should be inspectable. Skills encode the things that otherwise live only in repeated chat corrections: deck taste, evidence hygiene, stop rules, artifact routing, readable layout standards, and what counts as “done.”
@@ -74,7 +74,6 @@ This showcase is intentionally narrow: it includes Gavin/Hermes workflow skills 
 
 - `skills/research/gavin-research-presentations/` — Gavin-style research decks, rendered QA, PPTX/PDF packaging, and slide evidence hygiene.
 - `skills/research/paper-drafting-plan/` — paper-section/appendix planning dashboards and manuscript preview browsers.
-- `skills/research/gavin-autonomous-research/` — bounded autonomous research work until the next decision-changing point.
 - `skills/research/research-results-synthesis/` — Gavin/Hermes local research interpretation workflow for reading result artifacts, claim boundaries, and project status. This is not presented as a stock Hermes package skill.
 
 ### Hermes / project operations skills
@@ -92,7 +91,6 @@ Removed from the public showcase: friend-specific workflows and generic upstream
 - **Skill-encoded taste**: layout rules, claim boundaries, QA expectations, and stop points are stored as reusable procedures.
 - **Durable local state**: project handbooks, TODOs, handoffs, manifests, and artifacts keep long-running work coherent across threads.
 - **Artifact-first delivery**: decks, HTML dashboards, PDFs, and Thread Canvas pages are treated as first-class deliverables.
-- **Bounded autonomy**: the agent can continue work, but stops at decision-changing results, failed prerequisites, or resource conflicts.
 - **Public-safe demos**: demos here are near-real, artifact-backed, and manually staged; private logs and runtime state are excluded.
 
 ## Repository layout
@@ -106,7 +104,7 @@ Removed from the public showcase: friend-specific workflows and generic upstream
 │   ├── thread-canvas-discord-workflow.md
 │   └── PRIVACY_REVIEW.md
 ├── examples/                              # prompt/output-shape examples
-├── templates/                             # project handbook + handoff templates
+├── templates/                             # project handbook templates
 ├── code-comparisons/                      # before/after workflow comparison scaffold
 ├── skills/                                # curated Hermes SKILL.md workflows
 └── scripts/privacy_scan.py                # lightweight pre-public scan

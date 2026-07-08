@@ -11,7 +11,6 @@ This repo describes a Hermes-centered research workflow, not just a set of promp
 2. **Local files = durable state**
    - `handbook.md` records stable project context.
    - `todo.md` records Now / Next / Later / Blocked / Done.
-   - `HANDOFF.md` or run summaries record where autonomous work stopped.
 
 3. **Skills = reusable operating policy**
    - Skills encode trigger conditions, constraints, taste, verification, and stopping rules.
@@ -21,9 +20,8 @@ This repo describes a Hermes-centered research workflow, not just a set of promp
    - Decks, PDFs, HTML dashboards, and Thread Canvas pages are treated as deliverables, not hidden logs.
    - Rendered QA matters: no overflow, no unreadable tables, no link-only answers when chat text is required.
 
-5. **Autonomy has boundaries**
-   - Hermes can continue until the next decision-changing result.
-   - It should not work indefinitely or mutate project structure without explicit direction.
+5. **Scope has boundaries**
+   - Hermes should not work indefinitely or mutate project structure without explicit direction.
 
 ## Why skills rather than raw prompts?
 

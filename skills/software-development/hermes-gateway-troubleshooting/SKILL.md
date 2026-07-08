@@ -20,7 +20,7 @@ Use this skill when Gavin asks why Hermes is stuck, silent, retrying, typing for
 Typical trigger phrases:
 - "why stuck here", "why stocked here", "what is going on"
 - screenshot shows `Retrying in … (attempt 1/3)` or gateway typing indicator
-- Discord thread has no final answer after a long autonomous/project turn
+- Discord thread has no final answer after a long project turn
 - background process completion notifications appear to have derailed or delayed a session
 - Discord web-log / thread-canvas link fails with browser DNS errors such as `ERR_NAME_NOT_RESOLVED` for a `trycloudflare.com` hostname
 - Gavin reports a Discord web-log page cannot be opened, especially browser DNS errors like `ERR_NAME_NOT_RESOLVED` for a `*.trycloudflare.com` link

@@ -28,4 +28,4 @@ If the remote repo is non-empty, clone it separately and copy this content in, o
 
 ## Suggested GitHub description
 
-> Public-safe Hermes Agent skills and examples showing a Discord-first research workflow: presentations, paper planning, autonomous handoffs, Thread Canvas artifacts, and project operating rules.
+> Public-safe Hermes Agent skills and examples showing a Discord-first research workflow: presentations, paper planning, Thread Canvas artifacts, and project operating rules.

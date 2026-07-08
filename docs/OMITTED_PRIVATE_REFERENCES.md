@@ -9,7 +9,6 @@ A private local snapshot for review was written outside this git repo:
 ## Omitted counts
 
 - `software-development/hermes-gateway-troubleshooting/references/`: 7 files
-- `research/gavin-autonomous-research/references/`: 56 files
 - `research/gavin-research-presentations/references/`: 101 files
 - `research/gavin-research-presentations/scripts/`: 1 files
 - `research/research-results-synthesis/references/`: 123 files
