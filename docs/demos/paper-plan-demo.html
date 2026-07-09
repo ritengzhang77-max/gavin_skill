@@ -9,7 +9,7 @@
 </style>
 </head>
 <body><div class="wrap">
-<header class="hero"><h1>Paper planning browser sample</h1><p>A standalone manuscript-planning artifact: click a paper section or appendix node and the right side reads like a paper preview, not a generic RQ dashboard. This is public-safe, but the shape follows the real Value Action paper-planning dashboard.</p><div class="meta"><span class="pill">separate artifact example</span><span class="pill">manuscript hierarchy</span><span class="pill">sections → appendices → gates</span></div></header>
+<header class="hero"><h1>Paper planning browser sample</h1><p>A standalone manuscript-planning artifact: click a paper section or appendix node and the right side reads like a paper preview, not a generic RQ dashboard. The layout follows the real Value Action paper-planning dashboard.</p><div class="meta"><span class="pill">separate artifact example</span><span class="pill">manuscript hierarchy</span><span class="pill">sections → appendices → gates</span></div></header>
 <section class="dashboard"><aside class="sidebar"><h2>Paper hierarchy</h2><div class="controls"><input id="q" placeholder="Search paper sections" oninput="renderTree()"><select id="kind" onchange="renderTree()"><option value="all">All nodes</option><option value="main">Main paper</option><option value="appendix">Appendices</option><option value="planned">Planned / gates</option></select></div><div id="tree"></div></aside><main class="paperShell"><article class="paper" id="paper"></article></main></section>
 <section class="ledger"><h2>Result → paper placement ledger</h2><div class="grid" id="ledger"></div></section>
 </div><script>
