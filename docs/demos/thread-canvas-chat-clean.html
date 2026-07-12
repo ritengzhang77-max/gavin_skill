@@ -1,47 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Research checkpoint discussion</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mechanistic interpretation discussion</title>
 <style>
-:root{--bg:#eef2f0;--surface:#fffefa;--ink:#18211d;--muted:#60706a;--line:#d4ded8;--user:#eef6ff;--userLine:#96bfeb;--assistant:#fff8eb;--assistantLine:#e5bd72;--tool:#eef8f2;--toolLine:#91cbaa;--blue:#255f9f;--gold:#8a5b12;--green:#28734b}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#eef2f0,#e7ede9);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;padding:16px 18px 38px}.thread-top,.message{border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 18px rgba(23,32,27,.045)}.thread-top{background:var(--surface);padding:14px 16px;margin-bottom:14px}.eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:800}.thread-top h1{font-size:21px;line-height:1.2;margin:4px 0 7px}.thread-top p{margin:0;color:var(--muted);font-size:13px}.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.chip{border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:11px;color:#4e6059;background:#f8faf8}.day{display:flex;align-items:center;gap:9px;color:#718079;font-size:11px;margin:15px 0 9px}.day:before,.day:after{content:"";height:1px;background:#ccd8d1;flex:1}.message{padding:13px 14px;margin:10px 0}.message.user{background:var(--user);border-color:var(--userLine)}.message.assistant{background:var(--assistant);border-color:var(--assistantLine)}.message.tool{background:var(--tool);border-color:var(--toolLine)}.msg-head{display:flex;align-items:center;gap:7px;margin-bottom:7px;color:var(--muted);font-size:11px}.badge{display:inline-flex;border-radius:999px;padding:3px 7px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.04em}.user .badge{background:var(--blue)}.assistant .badge{background:var(--gold)}.tool .badge{background:var(--green)}p{margin:7px 0;font-size:13px;line-height:1.5}.quote{border-left:3px solid #77a8db;padding:8px 10px;background:#fff;color:#334a5d}.action-list{display:grid;gap:7px;margin-top:9px}.action{display:flex;gap:8px;align-items:flex-start;background:rgba(255,255,255,.7);border:1px solid rgba(120,105,70,.18);border-radius:9px;padding:8px 9px;font-size:12px;line-height:1.4}.check{font-weight:900;color:#24734c}.artifact{display:grid;grid-template-columns:34px 1fr auto;gap:9px;align-items:center;border:1px solid #b9d6c5;background:#fff;border-radius:10px;padding:9px;margin-top:8px}.icon{width:34px;height:34px;border-radius:8px;background:#173b60;color:#fff;display:grid;place-items:center;font-size:9px;font-weight:900}.artifact-title{font-weight:800;font-size:12px}.artifact-sub{font-size:11px;color:var(--muted);margin-top:2px}.status{font-size:10px;color:#256444;background:#e7f6ed;border:1px solid #a9d5bb;border-radius:999px;padding:3px 7px;font-weight:800}
+:root{--bg:#091723;--panel:#0d1d2b;--user:#122b42;--assistant:#102331;--line:#29475e;--ink:#eef6fc;--muted:#adc0cf;--blue:#7fb7ff;--mint:#64e6c5;--peach:#ffb87a}*{box-sizing:border-box}html,body{margin:0;height:100%;font:14px/1.46 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}body{display:grid;grid-template-rows:76px 1fr}.head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);background:#0b1a28}.topic{font-weight:850;font-size:15px}.sub{font-size:11px;color:var(--muted);margin-top:3px}.status{display:flex;align-items:center;gap:7px;font-size:10px;color:#bfeadf;border:1px solid #285c52;background:#102c2a;border-radius:999px;padding:6px 9px}.dot{width:7px;height:7px;border-radius:50%;background:var(--mint)}.thread{overflow:auto;padding:12px 12px 28px}.message{display:grid;grid-template-columns:38px 1fr;gap:10px;margin-bottom:9px;padding:13px 14px;border:1px solid var(--line);border-radius:13px;background:var(--assistant);box-shadow:0 8px 22px rgba(0,0,0,.13)}.message.user{background:var(--user);border-color:#355c82}.avatar{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:11px;font-weight:900;background:#203c55;color:#ddebfa}.user .avatar{background:#28547b;color:#eaf5ff}.assistant .avatar{background:#154338;color:#b9ffe9}.meta{display:flex;align-items:baseline;gap:7px;margin-bottom:6px}.name{font-weight:850;font-size:12px}.role{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.body{color:#d7e4ee}.body p{margin:0 0 7px}.body p:last-child{margin-bottom:0}.body b{color:#fff}.body .claim{color:var(--mint);font-weight:800}.body .warn{color:var(--peach);font-weight:800}.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}.point{border:1px solid #31506a;background:#0a1a27;border-radius:9px;padding:8px 9px}.point b{display:block;color:var(--mint);font-size:10px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}.formula{font-family:"DejaVu Serif",Georgia,serif;text-align:center;border:1px solid #3d6079;background:#081724;border-radius:9px;padding:8px;margin:8px 0;color:#e8f3fb;font-size:14px}.boundary{border-left:3px solid var(--peach);background:#172536;border-radius:0 9px 9px 0;padding:8px 10px;margin-top:8px;color:#d8e3ec}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:#33536b;border-radius:8px}
 </style>
 </head>
 <body>
-<section class="thread-top">
-  <div class="eyebrow">#interpretability-lab · checkpoint thread</div>
-  <h1>Corrected GPT-2 Small ranking review</h1>
-  <p>Preparing one decision slide for the weekly research meeting.</p>
-  <div class="chips"><span class="chip">matched comparison</span><span class="chip">eligibility audit</span><span class="chip">PPTX + PDF</span></div>
-</section>
-<div class="day"><span>Wednesday · research checkpoint</span></div>
-<article class="message user">
-  <div class="msg-head"><span class="badge">USER</span><strong>Gavin</strong><span>10:14</span></div>
-  <p>Build one slide for tomorrow’s lab meeting from the corrected GPT-2 Small Linear-versus-ResNet ranking.</p>
-  <p class="quote">Lead with the default winner, state how many runs passed the dead-feature gate, and include the exact matched-pair totals. Keep the claim narrow: this slide is about the EV–L0 ranking, not a general interpretability win.</p>
-  <p>Put the slide into an editable PowerPoint and export the same deck to PDF.</p>
-</article>
-<article class="message assistant">
-  <div class="msg-head"><span class="badge">HERMES</span><strong>Hermes</strong><span>10:18</span></div>
-  <p>I checked the corrected ranking tables and rebuilt the checkpoint slide around the decision you need to make.</p>
-  <div class="action-list">
-    <div class="action"><span class="check">✓</span><div><strong>Eligibility.</strong> The ranking uses 164 rows after the dead-feature gate; omitted rows stay visible in the audit table.</div></div>
-    <div class="action"><span class="check">✓</span><div><strong>Default winner.</strong> ResNet BatchTopK, width 8k and k=75, is the top joint EV–L0 row under the declared score.</div></div>
-    <div class="action"><span class="check">✓</span><div><strong>Matched evidence.</strong> The slide reports all 100 exact family × width × sparsity pairs and separates beat, loss, and trade outcomes.</div></div>
-    <div class="action"><span class="check">✓</span><div><strong>Claim boundary.</strong> The conclusion is limited to the corrected ranking universe and does not substitute for semantic or causal evaluation.</div></div>
-  </div>
-</article>
-<article class="message tool">
-  <div class="msg-head"><span class="badge">ARTIFACTS</span><strong>Promoted to Thread Canvas</strong><span>10:21</span></div>
-  <div class="artifact"><div class="icon">SLIDE</div><div><div class="artifact-title">GPT-2 Small ranking checkpoint</div><div class="artifact-sub">Rendered decision slide shown in the canvas.</div></div><span class="status">ready</span></div>
-  <div class="artifact"><div class="icon">PPTX</div><div><div class="artifact-title">Editable research deck</div><div class="artifact-sub">Native PowerPoint with editable text and tables.</div></div><span class="status">ready</span></div>
-  <div class="artifact"><div class="icon">PDF</div><div><div class="artifact-title">Research deck PDF</div><div class="artifact-sub">Rendered copy checked against the PowerPoint.</div></div><span class="status">ready</span></div>
-</article>
-<article class="message user">
-  <div class="msg-head"><span class="badge">USER</span><strong>Gavin</strong><span>10:24</span></div>
-  <p>Good. Keep this slide as the opening checkpoint, then let the detailed ranking pages follow it.</p>
-</article>
+<header class="head"><div><div class="topic">Mechanistic interpretation · Value Action</div><div class="sub">Evidence standards, confounds, and claim boundaries</div></div><div class="status"><span class="dot"></span>active analysis</div></header>
+<main class="thread">
+<article class="message user"><div class="avatar">G</div><div><div class="meta"><span class="name">Gavin</span><span class="role">research question</span></div><div class="body"><p>Suppose a sparse feature has a positive signed contrast whenever the model chooses the value-consistent action. Why is that not already enough to call it a value feature?</p></div></div></article>
+
+<article class="message assistant"><div class="avatar">H</div><div><div class="meta"><span class="name">Hermes</span><span class="role">analysis</span></div><div class="body"><p>Because the contrast only establishes <b>directional association</b>. It does not identify what the feature represents or whether it participated in the decision.</p><div class="formula">D<sub>f</sub>(x) = s(x)[Δ<sub>f,A</sub>(x) − Δ<sub>f,B</sub>(x)]</div><p>Three competing explanations remain:</p><div class="grid"><div class="point"><b>Prompt scaffold</b>It follows option order or answer format.</div><div class="point"><b>Content match</b>It recognizes words in the preferred option.</div><div class="point"><b>Decision consequence</b>It activates after the choice is fixed.</div><div class="point"><b>Mechanistic role</b>It contributes before and during choice.</div></div></div></div></article>
+
+<article class="message user"><div class="avatar">G</div><div><div class="meta"><span class="name">Gavin</span><span class="role">follow-up</span></div><div class="body"><p>How would you separate content tracking from decision involvement without hiding disagreement inside one aggregate score?</p></div></div></article>
+
+<article class="message assistant"><div class="avatar">H</div><div><div class="meta"><span class="name">Hermes</span><span class="role">evidence decomposition</span></div><div class="body"><p>I would keep four gates separate:</p><div class="grid"><div class="point"><b>1 · Direction</b>Reverse option order and preserve the signed effect.</div><div class="point"><b>2 · Location</b>Compare option span, answer site, and unrelated tokens.</div><div class="point"><b>3 · Timing</b>Require pre-answer evidence for an influence claim.</div><div class="point"><b>4 · Intervention</b>Ablate or patch under matched negative controls.</div></div><div class="boundary"><span class="warn">Claim boundary:</span> passing direction and location supports a <b>decision-relevant candidate</b>. A mechanistic label requires stable intervention evidence in the predicted direction.</div></div></div></article>
+
+<article class="message user"><div class="avatar">G</div><div><div class="meta"><span class="name">Gavin</span><span class="role">edge case</span></div><div class="body"><p>What if direction and localization are robust, but pre-answer influence is weak and the ablation changes only some items?</p></div></div></article>
+
+<article class="message assistant"><div class="avatar">H</div><div><div class="meta"><span class="name">Hermes</span><span class="role">interpretation</span></div><div class="body"><p>Then the mixed result is itself informative. Report the stable association, localize where it appears, and keep the causal claim conditional on item family and context.</p><p class="claim">Do not average disagreement into certainty. Preserve which evidence passed, which failed, and where the intervention generalized.</p></div></div></article>
+</main>
 </body>
 </html>

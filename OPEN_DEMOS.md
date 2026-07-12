@@ -9,9 +9,9 @@ GitHub source URLs like `https://github.com/.../blob/main/docs/demos/*.html` dis
 - Thread Canvas workflow: https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html
 - Paper planning browser: https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html
 - Value Action feature atlas: https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html
-- Pure Hermes-built PDF deck: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf
-- Pure Hermes-built PPTX deck: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx
-- Contact-sheet QA image: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck-contact-sheet.jpg
+- Rendered PDF methods deck: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf
+- Native PowerPoint methods deck: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pptx
+- Contact-sheet QA image: https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-contact-sheet.png
 
 Preview screenshots:
 

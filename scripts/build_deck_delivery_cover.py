@@ -5,9 +5,9 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 ART = ROOT / "docs/demos/artifacts"
 OUT = ROOT / "docs/demos/screenshots/pptx-pdf-package.png"
-SLIDE = ART / "hermes-built-research-deck-slide-01.png"
-PPTX = ART / "hermes-built-research-deck.pptx"
-PDF = ART / "hermes-built-research-deck.pdf"
+SLIDE = ART / "value-mechanism-evidence-hero.png"
+PPTX = ART / "value-mechanism-evidence-deck.pptx"
+PDF = ART / "value-mechanism-evidence-deck.pdf"
 
 W, H = 1600, 1000
 bg = Image.new("RGB", (W, H), "#07101d")
@@ -21,15 +21,15 @@ bold = lambda n: font("DejaVuSans-Bold.ttf", n)
 regular = lambda n: font("DejaVuSans.ttf", n)
 
 # Header
-d.text((46, 34), "Research deck delivery", font=bold(31), fill="#eef5ff")
-d.text((46, 77), "Native PowerPoint and rendered PDF, checked against the same opening slide", font=regular(16), fill="#9fb3d1")
+d.text((46, 34), "Mechanistic evidence deck", font=bold(31), fill="#eef5ff")
+d.text((46, 77), "A four-slide academic methods deck delivered as native PowerPoint and rendered PDF", font=regular(16), fill="#9fb3d1")
 d.rounded_rectangle((1310, 36, 1548, 82), radius=22, fill="#123354", outline="#3f72a3", width=2)
-d.text((1354, 49), "24 SLIDES · QA COMPLETE", font=bold(12), fill="#bfe1ff")
+d.text((1366, 49), "4 SLIDES · QA COMPLETE", font=bold(12), fill="#bfe1ff")
 
 # Slide preview panel
 panel = (42, 120, 1166, 930)
 d.rounded_rectangle(panel, radius=18, fill="#101d32", outline="#2e496c", width=2)
-d.text((66, 143), "Opening checkpoint slide", font=bold(15), fill="#dce8fa")
+d.text((66, 143), "Evidence ladder · slide 2", font=bold(15), fill="#dce8fa")
 slide = Image.open(SLIDE).convert("RGB")
 max_w, max_h = 1068, 704
 ratio = min(max_w / slide.width, max_h / slide.height)
@@ -39,11 +39,12 @@ y = 190 + (690 - slide.height) // 2
 bg.paste(slide, (x, y))
 d = ImageDraw.Draw(bg)
 d.rounded_rectangle((x-2, y-2, x+slide.width+2, y+slide.height+2), radius=8, outline="#6e86a4", width=2)
-d.text((66, 889), "Rendered from the delivered PDF; the PowerPoint remains editable.", font=regular(13), fill="#9fb3d1")
+d.text((66, 889), "Rendered from the delivered PDF; the PowerPoint remains fully editable.", font=regular(13), fill="#9fb3d1")
 
 # Delivery cards
-def size_mb(path):
-    return f"{path.stat().st_size / (1024*1024):.1f} MB"
+def file_size(path):
+    kb = path.stat().st_size / 1024
+    return f"{kb:.0f} KB" if kb < 1024 else f"{kb / 1024:.1f} MB"
 
 def card(y0, ext, title, subtitle, size, accent, lines):
     x0, x1, y1 = 1200, 1558, y0 + 246
@@ -61,13 +62,13 @@ def card(y0, ext, title, subtitle, size, accent, lines):
         d.text((x0+43, yy), text, font=regular(12), fill="#cbd9ec")
         yy += 30
 
-card(147, "PPTX", "Editable PowerPoint", "Native presentation file", size_mb(PPTX), "#2f6fa6", ["Editable text and tables", "Slide geometry retained", "Ready for further revision"])
-card(422, "PDF", "Rendered PDF", "Presentation-ready export", size_mb(PDF), "#b24d57", ["Same 24-slide sequence", "Font and layout check", "Portable review copy"])
+card(147, "PPTX", "Editable PowerPoint", "Native presentation file", file_size(PPTX), "#2f6fa6", ["Editable text and vector shapes", "Four-slide methods sequence", "Ready for further revision"])
+card(422, "PDF", "Rendered PDF", "Presentation-ready export", file_size(PDF), "#b24d57", ["Same four-slide sequence", "Font and layout check", "Portable review copy"])
 
 # QA block
 d.rounded_rectangle((1200, 697, 1558, 930), radius=17, fill="#0d1728", outline="#2a4268", width=2)
 d.text((1224, 719), "Delivery checks", font=bold(16), fill="#eef5ff")
-checks = ["PPTX opened successfully", "PDF rendered from PowerPoint", "Opening slide matches", "Contact-sheet review complete"]
+checks = ["PPTX opened successfully", "PDF rendered from PowerPoint", "Hero slide matches", "Four-slide review complete"]
 yy = 759
 for text in checks:
     d.rounded_rectangle((1224, yy, 1244, yy+20), radius=10, fill="#173d31")

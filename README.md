@@ -15,7 +15,7 @@
   ·
   <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html">Feature atlas</a>
   ·
-  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf">PPTX/PDF package</a>
+  <a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf">PPTX/PDF package</a>
 </p>
 
 <p align="center">
@@ -40,10 +40,10 @@ The central idea is that a strong agent workflow should be inspectable. Skills e
 
 Each artifact shows a different part of the working research process: academic discussion, manuscript planning, result exploration, and native presentation delivery.
 
-- [Open the Thread Canvas workflow](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — an academic discussion beside the rendered slide, editable PowerPoint, and PDF produced from the request.
+- [Open the Thread Canvas workflow](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — a substantive mechanistic-interpretability discussion beside a polished evidence-ladder slide, editable PowerPoint, and rendered PDF.
 - [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — section and subsection hierarchy beside a manuscript preview with a formula, definitions, and evidence table.
 - [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — a searchable value, feature, evidence, and explanation interface.
-- [Open the pure Hermes-built PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pptx) — native deck package with contact-sheet QA.
+- [Open the rendered PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pptx) — native deck package with contact-sheet QA.
 
 Preview screenshots are shown one per row so the labels and UI details are readable.
 
@@ -67,8 +67,8 @@ Preview screenshots are shown one per row so the labels and UI details are reada
 
 ### 4. Native PPTX + PDF delivery
 
-<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/hermes-built-research-deck.pdf">
-  <img width="1000" alt="Pure Hermes-built PPTX/PDF package" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/pptx-pdf-package.png">
+<a href="https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf">
+  <img width="1000" alt="Native PPTX and PDF academic methods deck" src="https://ritengzhang77-max.github.io/gavin_skill/demos/screenshots/pptx-pdf-package.png">
 </a>
 
 These artifacts are staged from real workflow structures while excluding private project logs and runtime state.
