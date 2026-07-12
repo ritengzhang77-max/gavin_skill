@@ -1,81 +1,51 @@
 #!/usr/bin/env python3
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
 ART = ROOT / "docs/demos/artifacts"
 OUT = ROOT / "docs/demos/screenshots/pptx-pdf-package.png"
-SLIDE = ART / "value-mechanism-evidence-hero.png"
-PPTX = ART / "value-mechanism-evidence-deck.pptx"
-PDF = ART / "value-mechanism-evidence-deck.pdf"
+PAGE = ART / "value-mechanism-evidence-hero.png"
 
 W, H = 1600, 1000
-bg = Image.new("RGB", (W, H), "#07101d")
-d = ImageDraw.Draw(bg)
-
+canvas = Image.new("RGB", (W, H), "#cfd1d2")
+d = ImageDraw.Draw(canvas)
 font_dir = Path("/usr/share/fonts/truetype/dejavu")
-def font(name, size):
-    return ImageFont.truetype(str(font_dir / name), size)
 
-bold = lambda n: font("DejaVuSans-Bold.ttf", n)
-regular = lambda n: font("DejaVuSans.ttf", n)
+def regular(size): return ImageFont.truetype(str(font_dir / "DejaVuSans.ttf"), size)
+def bold(size): return ImageFont.truetype(str(font_dir / "DejaVuSans-Bold.ttf"), size)
 
-# Header
-d.text((46, 34), "Mechanistic evidence deck", font=bold(31), fill="#eef5ff")
-d.text((46, 77), "A four-slide academic methods deck delivered as native PowerPoint and rendered PDF", font=regular(16), fill="#9fb3d1")
-d.rounded_rectangle((1310, 36, 1548, 82), radius=22, fill="#123354", outline="#3f72a3", width=2)
-d.text((1366, 49), "4 SLIDES · QA COMPLETE", font=bold(12), fill="#bfe1ff")
+# Native-looking PDF viewer toolbar; no promotional panels.
+d.rectangle((0, 0, W, 64), fill="#323639")
+for x, color in [(24,"#ff5f57"),(48,"#febc2e"),(72,"#28c840")]:
+    d.ellipse((x-7,25-7,x+7,25+7), fill=color)
+d.text((108, 20), "value-mechanism-evidence-deck.pdf", font=regular(14), fill="#f2f2f2")
+# center page control
+d.rounded_rectangle((726, 15, 874, 49), radius=7, fill="#242729", outline="#595d60")
+d.text((756, 23), "2  /  4", font=bold(13), fill="#f2f2f2")
+# right-side standard viewer controls only
+d.text((1283, 20), "−", font=bold(18), fill="#f0f0f0")
+d.text((1320, 21), "100%", font=regular(13), fill="#f0f0f0")
+d.text((1385, 19), "+", font=bold(18), fill="#f0f0f0")
+d.line((1433,16,1433,48), fill="#65696c", width=1)
+d.text((1460, 18), "↓", font=bold(19), fill="#f0f0f0")
+d.text((1510, 17), "⎙", font=regular(19), fill="#f0f0f0")
 
-# Slide preview panel
-panel = (42, 120, 1166, 930)
-d.rounded_rectangle(panel, radius=18, fill="#101d32", outline="#2e496c", width=2)
-d.text((66, 143), "Evidence ladder · slide 2", font=bold(15), fill="#dce8fa")
-slide = Image.open(SLIDE).convert("RGB")
-max_w, max_h = 1068, 704
-ratio = min(max_w / slide.width, max_h / slide.height)
-slide = slide.resize((int(slide.width * ratio), int(slide.height * ratio)), Image.Resampling.LANCZOS)
-x = panel[0] + (panel[2] - panel[0] - slide.width) // 2
-y = 190 + (690 - slide.height) // 2
-bg.paste(slide, (x, y))
-d = ImageDraw.Draw(bg)
-d.rounded_rectangle((x-2, y-2, x+slide.width+2, y+slide.height+2), radius=8, outline="#6e86a4", width=2)
-d.text((66, 889), "Rendered from the delivered PDF; the PowerPoint remains fully editable.", font=regular(13), fill="#9fb3d1")
-
-# Delivery cards
-def file_size(path):
-    kb = path.stat().st_size / 1024
-    return f"{kb:.0f} KB" if kb < 1024 else f"{kb / 1024:.1f} MB"
-
-def card(y0, ext, title, subtitle, size, accent, lines):
-    x0, x1, y1 = 1200, 1558, y0 + 246
-    d.rounded_rectangle((x0, y0, x1, y1), radius=17, fill="#101d32", outline=accent, width=2)
-    d.rounded_rectangle((x0+22, y0+22, x0+90, y0+90), radius=12, fill=accent)
-    tw = d.textbbox((0,0), ext, font=bold(13))[2]
-    d.text((x0+56-tw/2, y0+48), ext, font=bold(13), fill="#ffffff", anchor="mm")
-    d.text((x0+110, y0+25), title, font=bold(17), fill="#eef5ff")
-    d.text((x0+110, y0+52), subtitle, font=regular(12), fill="#9fb3d1")
-    d.rounded_rectangle((x0+110, y0+76, x0+190, y0+104), radius=14, fill="#0b1424", outline="#2e496c")
-    d.text((x0+126, y0+84), size, font=bold(11), fill="#cbd9ec")
-    yy = y0 + 126
-    for text in lines:
-        d.ellipse((x0+24, yy+4, x0+32, yy+12), fill="#82e6c5")
-        d.text((x0+43, yy), text, font=regular(12), fill="#cbd9ec")
-        yy += 30
-
-card(147, "PPTX", "Editable PowerPoint", "Native presentation file", file_size(PPTX), "#2f6fa6", ["Editable text and vector shapes", "Four-slide methods sequence", "Ready for further revision"])
-card(422, "PDF", "Rendered PDF", "Presentation-ready export", file_size(PDF), "#b24d57", ["Same four-slide sequence", "Font and layout check", "Portable review copy"])
-
-# QA block
-d.rounded_rectangle((1200, 697, 1558, 930), radius=17, fill="#0d1728", outline="#2a4268", width=2)
-d.text((1224, 719), "Delivery checks", font=bold(16), fill="#eef5ff")
-checks = ["PPTX opened successfully", "PDF rendered from PowerPoint", "Hero slide matches", "Four-slide review complete"]
-yy = 759
-for text in checks:
-    d.rounded_rectangle((1224, yy, 1244, yy+20), radius=10, fill="#173d31")
-    d.text((1229, yy+1), "✓", font=bold(13), fill="#82e6c5")
-    d.text((1256, yy+1), text, font=regular(12), fill="#cbd9ec")
-    yy += 38
-
-OUT.parent.mkdir(parents=True, exist_ok=True)
-bg.save(OUT, quality=95)
+page = Image.open(PAGE).convert("RGB")
+max_w, max_h = 1330, 820
+scale = min(max_w/page.width, max_h/page.height)
+page = page.resize((int(page.width*scale), int(page.height*scale)), Image.Resampling.LANCZOS)
+px = (W-page.width)//2
+py = 64 + (H-64-page.height)//2
+# restrained document shadow
+shadow = Image.new("RGBA", (W,H), (0,0,0,0))
+sd = ImageDraw.Draw(shadow)
+sd.rectangle((px+7,py+10,px+page.width+12,py+page.height+15), fill=(0,0,0,95))
+shadow = shadow.filter(ImageFilter.GaussianBlur(14))
+canvas = Image.alpha_composite(canvas.convert("RGBA"), shadow)
+canvas.paste(page, (px,py))
+# hairline page boundary
+d = ImageDraw.Draw(canvas)
+d.rectangle((px-1,py-1,px+page.width,py+page.height), outline="#9fa2a4", width=1)
+canvas.convert("RGB").save(OUT, quality=95)
 print(OUT)

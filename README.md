@@ -40,10 +40,10 @@ The central idea is that a strong agent workflow should be inspectable. Skills e
 
 Each artifact shows a different part of the working research process: academic discussion, manuscript planning, result exploration, and native presentation delivery.
 
-- [Open the Thread Canvas workflow](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — a substantive mechanistic-interpretability discussion beside a polished evidence-ladder slide, editable PowerPoint, and rendered PDF.
+- [Open the Thread Canvas workflow](https://ritengzhang77-max.github.io/gavin_skill/demos/thread-canvas-demo.html) — a substantive mechanistic-interpretability discussion beside a restrained academic slide in a natural PDF viewer.
 - [Open the rendered paper-plan browser](https://ritengzhang77-max.github.io/gavin_skill/demos/paper-plan-demo.html) — section and subsection hierarchy beside a manuscript preview with a formula, definitions, and evidence table.
 - [Open the Value Action feature atlas](https://ritengzhang77-max.github.io/gavin_skill/demos/value-action-feature-atlas-demo.html) — a searchable value, feature, evidence, and explanation interface.
-- [Open the rendered PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pptx) — native deck package with contact-sheet QA.
+- [Open the rendered PDF](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pdf) / [PPTX](https://ritengzhang77-max.github.io/gavin_skill/demos/artifacts/value-mechanism-evidence-deck.pptx) — a four-page academic methods deck in native presentation and document formats.
 
 Preview screenshots are shown one per row so the labels and UI details are readable.
 
